@@ -1,0 +1,24 @@
+{
+    "name": "mox-toolbelt",
+    "version": "0.1.0",
+    "description": "Toolbelt module within the Mox system. Contains helper functions for applications.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/TeachBoost/mox-toolbelt.git"
+    },
+    "author": "Mike Gioia <mike@particlebits.com> (https://particlebits.com/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TeachBoost/mox-toolbelt/issues"
+    },
+    "homepage": "https://github.com/TeachBoost/mox-toolbelt",
+    "dependencies": {},
+    "devDependencies": {
+        "mocha" : "*",
+        "chai" : "*"
+    }
+}
