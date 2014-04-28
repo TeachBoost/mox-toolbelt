@@ -1,7 +1,7 @@
 {
     "name": "mox-toolbelt",
-    "version": "0.1.0",
-    "description": "Toolbelt module within the Mox system. Contains helper functions for applications.",
+    "version": "0.1.1",
+    "description": "Toolbelt module within the Mox system. Contains helper functions for the main application to use.",
     "main": "index.js",
     "scripts": {
         "test": "mocha"
