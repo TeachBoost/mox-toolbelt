@@ -17,15 +17,15 @@ describe( 'Toolbelt', function () {
         // shim window object
         window = {
             location: {
-                pathname: "/first/second/third#fourth"
+                pathname: '/first/second/#!/third#fourth'
             }
         };
         expect( Toolbelt.getUrlSegment( 1 ) )
-            .to.be.equal( "first" );
+            .to.be.equal( 'first' );
         expect( Toolbelt.getUrlSegment( 2 ) )
-            .to.be.equal( "second" );
+            .to.be.equal( 'second' );
         expect( Toolbelt.getUrlSegment( 3 ) )
-            .to.be.equal( "third" );
+            .to.be.equal( 'third' );
     });
 
 });

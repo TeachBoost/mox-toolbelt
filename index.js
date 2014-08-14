@@ -1,5 +1,5 @@
 /**
- * Utility functions
+ * MOX Utility functions
  */
 
 var Toolbelt = {
@@ -7,11 +7,15 @@ var Toolbelt = {
     // returns a segment from the URL. n starts at 1.
     getUrlSegment: function ( n ) {
         var pathname = window.location.pathname;
-        
+
         // remove leading slash
-        if ( pathname.charAt( 0 ) == '/' ) {
+        if ( pathname.charAt( 0 ) === '/' ) {
             pathname = pathname.substr( 1 );
         }
+
+        // remove hash or hashbang (only if inside //)
+        pathname = pathname.replace( /\/\#!?\//, '/' );
+
 
         var segments = pathname.split( '/' );
 
