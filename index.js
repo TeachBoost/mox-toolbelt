@@ -6,7 +6,10 @@ var Toolbelt = {
 
     // returns a segment from the URL. n starts at 1.
     getUrlSegment: function ( n ) {
-        var pathname = window.location.pathname;
+        // for IE8, window.location will be wrong
+        var location = window.history.location || window.location;
+        var pathname = location.pathname;
+
 
         // remove leading slash
         if ( pathname.charAt( 0 ) === '/' ) {
@@ -14,6 +17,8 @@ var Toolbelt = {
         }
 
         // remove hash or hashbang (only if inside //)
+        // likely shouldn't need , location will
+        // not contain a hash.
         pathname = pathname.replace( /\/\#!?\//, '/' );
 
 
